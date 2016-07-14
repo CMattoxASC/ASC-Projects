@@ -94,8 +94,17 @@ def findColorSpot(picture, color):
 # 3-BLUE
 # 4-YELLOW
 
-######################Code Starts Here##################################
+######################Code Starts Here#########################
 
+pic = takePicture()
+i = 0
+
+while i < 5:
+    turnBy(45)
+    wait(2)
+    pic = takePicture()
+    show(pic)
+    findColorSpot(pic,1)
 
 
 
